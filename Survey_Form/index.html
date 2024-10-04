@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Survery Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">freeCodeCamp Survery Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+      </header>
+      
+      <form id="survey-form">
+        <div class="form-section">
+          <label for="name" id="name-label">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" class="form-bar" required>
+        </div>
+
+        <div class="form-section">
+          <label for="email" id="email-label">Email</label>
+          <input id="email" type="email" placeholder="Enter your Email" class="form-bar" required>
+        </div>
+
+        <div class="form-section">
+          <label for="number" id="number-label">Age(optional)</label>
+          <input id="number" type="number" pattern="[0-9]" min="0" max="200" placeholder="Age" class="form-bar">
+        </div>
+
+        <div class="form-section">
+          <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+          <select id="dropdown" class="form-bar">
+            <option value="">Select current role</option>
+            <option value="student">Student</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="full time leaner">Full Time Leaner</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-section">
+          <label>Would you recommend freeCodeCamp to a friend?</label>
+          <label for="definitely">
+            <input type="radio" name="recommend" id="definitely" value="definitely" class="input-redio">Definitely</label>
+          <label for="maybe">
+            <input type="radio" name="recommend" id="maybe" value="maybe" class="input-redio">Maybe</label>
+          <label for="not sure">
+            <input type="radio" name="recommend" id="not sure" value="not sure" class="input-redio">Not sure</label>
+        </div>
+
+        <div class="form-section">
+          <label>What would you like to see improved? (Check all that apply)</label>
+          <label for="front-end projects"><input type="checkbox" name="goal" id="front-end projects" value="front-end projects" class="input-checkbox">Front-end Projects</label>
+          <label for="back-end projects"><input type="checkbox" name="goal" id="back-end projects" value="back-end projects" class="input-checkbox">Back-end Projects</label>
+          <label for="data visualization"><input type="checkbox" name="goal" id="data visualization" value="data visualization" class="input-checkbox">Data Visualization</label>
+          <label for="Challenges"><input type="checkbox" name="goal" id="challenges" value="challenges" class="input-checkbox">Challenges</label>
+          <label for="Open Source Community"><input type="checkbox" name="goal" id="open source community" value="open source community" class="input-checkbox">Open Source Community</label>
+        </div>
+
+        <div class="form-section">
+          <label>Any comments or suggestions?</label>
+          <textarea id="suggest" name="suggest" placeholder="Enter your comment here.."></textarea>
+          <input type="submit" id="submit" value="Submit" class="input-submit" method="POST">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
