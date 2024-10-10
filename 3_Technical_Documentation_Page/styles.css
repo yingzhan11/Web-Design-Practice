@@ -1,0 +1,115 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  background-color: white;
+  color: #333333;
+  min-width: 300px;
+}
+
+#nav-div {
+  position: fixed;
+  height: 100%;
+  width: 300px;
+  border-right: 3.5px solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  top: 0;
+  left: 0;
+}
+
+#nav-header {
+  text-align: center;
+  padding: 20px;
+  font-size: 2rem;
+}
+
+#link-div {
+  height: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav-link {
+  display: block;
+  font-size: 1.5rem;
+  border-top: 3px solid;
+  border-color: rgba(0, 22, 22, 0.4);
+  padding: 20px 30px 20px 30px;
+  color: #333333;
+  text-decoration: none;
+}
+
+body {
+  display: block;
+  margin: 10px;
+  min-width: 300px;
+}
+
+main {
+  position: absolute;
+  display: block;
+  margin-left: 300px;
+  padding: 30px;
+}
+
+.main-header {
+  font-size: 2rem;
+}
+
+article {
+  margin: 0 0 30px 20px;
+      display: block;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+ul {
+  font-size: 1.25rem;
+  margin-left: 40px;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+code {
+  display: block;
+  padding:15px;
+  font-size: 1rem;
+  margin: 20px;
+  background-color: #f0f0f0;
+  white-space: pre-line;
+  line-height: 2;
+  border-radius: 7px;
+}
+
+@media only screen and (max-width: 815px) {
+  #nav-div {
+    position: absolute;
+    max-height: 300px;
+    width: 100%;
+    border-bottom: 3.5px solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  #link-div {
+    height: 200;
+    border: 1px solid;
+  }
+}
+
+@media only screen and (max-width: 815px) {
+  main {
+    position: relative;
+    display: block;
+    margin-left: 0px;
+    margin-top: 300px;
+  }
+}
